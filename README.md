@@ -4,7 +4,7 @@ The principal target of the assignment is to implement an indirect Field Oriente
 
 ![alt text](ProjectTasks.jpg)
 
-The motor parameter have been derived from the plate data, in particular the plate look like:
+The motor parameter have been derived from the plate data (we also have neglected iron losses and mechanical losses), in particular the plate look like:
 
 | Description | Value |
 | ----------- | ----------- |
@@ -14,3 +14,4 @@ The motor parameter have been derived from the plate data, in particular the pla
 | $\sigma~n$ | 0.015 |
 | $p$ | 6 |
 | $J$ | 5 kgm^2 |
+
