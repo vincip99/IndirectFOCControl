@@ -26,3 +26,6 @@ Also we need to assume other usefull parameter of the machine in order to obtain
 | $s_{n}$ | 0.02 | Nominal Slip | Range of good motor is [0.02 - 0.05] |
 | $I_{n}$ | $\frac{I_{mn}}{0.35} =$ 389.6 A | Nominal Current | Tipically used formula |
 | $w_{n}$ | $w_{0}(1-s_{n}) =$ 307.9 rad/s | Nominal Speed | Formula from Nominal Slip|
+
+After we got the values of the equivalent circuit, to simulate propewrly the induction motor:
+
