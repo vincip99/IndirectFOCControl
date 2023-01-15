@@ -27,5 +27,13 @@ Also we need to assume other usefull parameter of the machine in order to obtain
 | $I_{n}$ | $\frac{I_{mn}}{0.35} =$ 389.6 A | Nominal Current | Tipically used formula |
 | $w_{n}$ | $w_{0}(1-s_{n}) =$ 307.9 rad/s | Nominal Speed | Formula from Nominal Slip|
 
-After we got the values of the equivalent circuit, to simulate propewrly the induction motor:
+After we got the values of the equivalent circuit, to simulate properly the induction motor:
 
+| Name | Value | Description | 
+| ----------- | ----------- | ----------- | 
+| $L_{\sigma t}$ | $3p\frac{1.73V_n}{2w_{0}^2T_{k}}$ | Total leakage Inductance | 
+| $L_{\sigma s}$ | $0.5L_{\sigma t}$ | Stator leakage Inductance | 
+| $L_{\sigma r}$ | $0.5L_{\sigma t}$ | Rotor leakage Inductance |
+| $R_{r}$ | $\frac{P_{n}S_{n}}{3I_{n}^2(1-s_{n})}$| Rotor Resistance |
+| $R_{s}$ | $\frac{P_{js}}{3I_{n}^2}$ | Stator Resistance |
+| $L_{\mu}$ | $\frac{1.73V_{n}}{I_{mn}w_{0}}$ | Mutual Inductance |
