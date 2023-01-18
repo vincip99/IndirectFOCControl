@@ -11,7 +11,7 @@ The motor parameter have been derived from the plate data (we also have neglecte
 | $P_{n}$ | 150 kW |
 | $V_{n}$ | 220 V |
 | $f_{n}$ | 300Hz |
-| $\sigma_{n}$ | 0.015 |
+| $s_{n}$ | 0.015 |
 | $p$ | 6 |
 | $J$ | 5 kgm^2 |
 
@@ -20,12 +20,15 @@ Also we need to assume other usefull parameter of the machine in order to obtain
 
 | Name | Value | Description | Why |
 | ----------- | ----------- | ----------- | ----------- |
-| $\eta$ | 0.98 | Efficiency | Based on other similar motors |
-| $I_{mn}$ | $0.2  \frac{P_{n}}{V_{n}} =$ 136.4 A | Mgnetizing Nominal Current | Repeating pattern in other motors |
-| $T_{k}$ | 360 Nm | Max Rated Torque | based on other similar motors |
-| $s_{n}$ | 0.02 | Nominal Slip | Range of good motor is [0.02 - 0.05] |
-| $I_{n}$ | $\frac{I_{mn}}{0.35} =$ 389.6 A | Nominal Current | Tipically used formula |
-| $w_{n}$ | $w_{0}(1-s_{n}) =$ 307.9 rad/s | Nominal Speed | Formula from Nominal Slip|
+| $\eta$ | 0.97 | Efficiency | Based on other similar motors |
+| $cos \phi$ | 0.95 | Power Factor | Based on other similar motors |
+| $V_{ny}$ | $\frac{V_{n}}{\eta} =$ 127 V | Line Voltage | Formula from Nominal Voltage |
+| $P_{a}$ | $\frac{P_{n}}{\eta}$ | Input Power | Formula from Nominal Power |
+| $I_{n}$ | $\frac{P_{n}}{3V_{ny}cos\phi} =$ 427.2 A | Nominal Current | Formula from Input Power |
+| $T_{n}$ | $\frac{P_{n}}{w_{n}} =$ 484.7 Nm | Nominal Torque | Power formula |
+| $T_{k}$ | $2T_{n}$ | Peak Torque | based on other similar motors |
+| $I_{mn}$ | $0.35I_{n} =$ 149.5 A | Magnetizing Current | Tipically used formula |
+| $w_{n}$ | $w_{0}(1-s_{n}) =$ 307.9 rad/s | Nominal Speed | Formula from Nominal Slip |
 
 After we got the values of the equivalent circuit, to simulate properly the induction motor:
 
