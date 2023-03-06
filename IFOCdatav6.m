@@ -2,7 +2,7 @@ clear all
 close all
 clc
 
-%% Dati e targa motori
+%% Dati di targa motore
 P_n = 150000;
 Vs_n = 220;
 f_n = 300;
@@ -54,11 +54,6 @@ Ts = 1/fs;                          %Tempo di campionamento
 kp_w = Tk_n/(0.05*wr_n);          %Cost prop. regolatore velocità
 ki_w = 0.5*(kp_w^2)/J;              %Cost. integrale regolatore veloictà
 
-T_rate_max = T_n/0.01;  %Massima derivata che può avere l'uscita di controllo per la coppia.
-V_rate_max = Vsn_y/0.01;
 %
 kpi=(1/2)*Ltot/Ts;
 kii=(1/2)*kpi^2/Ltot;
-
-I_l=Im_n*sqrt(Rr^(2)+(w_n^(2))*(Lm+Lr)^(2))/(sqrt(Rr^(2)+(w_n^(2))*(Lr)^(2)));
-V_lim=Vsn_y/sqrt(2);
